@@ -8,4 +8,14 @@
     <string name="edit_uname">Enter Username</string>
     <string name="edit_pass">Enter Password</string>
     <string name="app_name">app_name</string>
+    <string name="fname_view">First Name:</string>
+    <string name="lname_view">Last Name:</string>
+    <string name="uname_view">Username:</string>
+    <string name="tname_view">Team Name:</string>
+    <string name="fname_enterCreate">Enter First Name</string>
+    <string name="lname_enterCreate">Enter Last Name</string>
+    <string name="uname_enterCreate">Enter Username</string>
+    <string name="tname_enterCreate">Enter Team Name</string>
+    <string name="create_button">Create Account</string>
+    <string name="back_createButton">Back</string>
 </resources>
