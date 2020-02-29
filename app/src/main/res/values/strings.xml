@@ -6,7 +6,7 @@
     <string name="button_create">Create Account</string>
     <string name="text_or">Or</string>
     <string name="edit_uname">Enter Username</string>
-    <string name="edit_pass">Enter Password</string>
+    <string name="edit_pass" translatable="false">Enter Password</string>
     <string name="app_name">StudyBuddy</string>
     <string name="fname_view">First Name:</string>
     <string name="lname_view">Last Name:</string>
@@ -21,4 +21,9 @@
     <string name="e_email">Email:</string>
     <string name="edit_email">Enter Email</string>
     <string name="eMail_view">Email:</string>
+    <string name="btn_vSchedule">View Schedule</string>
+    <string name="btn_vNotes">View Notes</string>
+    <string name="btn_vTeam">View Team</string>
+    <string name="btn_vProfile">View Profile</string>
+    <string name="btn_signOut">Sign Out</string>
 </resources>
