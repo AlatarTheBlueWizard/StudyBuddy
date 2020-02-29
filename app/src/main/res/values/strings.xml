@@ -1,3 +1,11 @@
 <resources>
-    <string name="app_name">StudyBuddy</string>
+
+    <string name="user_name">Username:</string>
+    <string name="pass">Password:</string>
+    <string name="button_login">Login</string>
+    <string name="button_create">Create Account</string>
+    <string name="text_or">Or</string>
+    <string name="edit_uname">Enter Username</string>
+    <string name="edit_pass">Enter Password</string>
+    <string name="app_name">app_name</string>
 </resources>
