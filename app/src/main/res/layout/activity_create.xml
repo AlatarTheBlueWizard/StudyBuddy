@@ -42,10 +42,10 @@
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
         android:layout_marginTop="67dp"
-        android:layout_marginEnd="47dp"
-        android:layout_marginRight="47dp"
-        android:text="@string/uname_view"
-        app:layout_constraintEnd_toStartOf="@+id/tNameEnterCreate"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:text="@string/eMail_view"
+        app:layout_constraintEnd_toStartOf="@+id/editText2"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/lNameCreate" />
@@ -88,25 +88,9 @@
         app:layout_constraintTop_toBottomOf="@+id/passEditCreate" />
 
     <EditText
-        android:id="@+id/tNameEnterCreate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="41dp"
-        android:layout_marginEnd="67dp"
-        android:layout_marginRight="67dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/uname_enterCreate"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/tNameCreate"
-        app:layout_constraintTop_toBottomOf="@+id/lNameEnterCreate" />
-
-    <EditText
         android:id="@+id/uNameEnterCreate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
         android:layout_marginEnd="67dp"
         android:layout_marginRight="67dp"
         android:ems="10"
@@ -115,7 +99,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toEndOf="@+id/uNameCreate"
-        app:layout_constraintTop_toBottomOf="@+id/tNameEnterCreate" />
+        tools:layout_editor_absoluteY="314dp" />
 
     <TextView
         android:id="@+id/fNameCreate"
@@ -175,4 +159,18 @@
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/uNameCreate" />
+
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="69dp"
+        android:layout_marginRight="69dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/tNameCreate"
+        app:layout_constraintTop_toBottomOf="@+id/lNameEnterCreate" />
 </androidx.constraintlayout.widget.ConstraintLayout>
