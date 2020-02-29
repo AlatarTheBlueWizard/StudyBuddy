@@ -1,5 +1,6 @@
 package com.example.studybuddy;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -10,6 +11,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
@@ -57,7 +61,26 @@ public class MainActivity extends AppCompatActivity {
                 }
 
                 //authenticate user
-                //MAKE NEW ACTIVITY AND LAYOUT FIRST!!
+                auth.signInWithEmailAndPassword(email, password).addOnCompleteListener(MainActivity.this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        // If sign in fails, display a message to the user.
+                        // the auth state listener will be notified and logic to handle
+                        // signed in user can be handled in the listener.
+                        if(!task.isSuccessful()) {
+                            //there was an error
+                            if (password.length() < 6) {
+                                inputPassword.setError(getString(R.string.minimum_password));
+                            } else {
+                                Toast.makeText(MainActivity.this, getString(R.string.auth_failed), Toast.LENGTH_LONG).show();
+                            }
+                        } else {
+                            Intent intent = new Intent(MainActivity.this, homeActivity.class);
+                            startActivity(intent);
+                            finish();
+                        }
+                    }
+                });
             }
         });
     }
