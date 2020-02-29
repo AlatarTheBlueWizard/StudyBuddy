@@ -67,7 +67,7 @@ public class MainActivity extends AppCompatActivity {
                         // If sign in fails, display a message to the user.
                         // the auth state listener will be notified and logic to handle
                         // signed in user can be handled in the listener.
-                        if(!task.isSuccessful()) {
+                        /*if(!task.isSuccessful()) {
                             //there was an error
                             if (password.length() < 6) {
                                 inputPassword.setError(getString(R.string.minimum_password));
@@ -75,8 +75,13 @@ public class MainActivity extends AppCompatActivity {
                                 Toast.makeText(MainActivity.this, getString(R.string.auth_failed), Toast.LENGTH_LONG).show();
                             }
                         } else {
-                            Intent intent = new Intent(MainActivity.this, homeActivity.class);
-                            startActivity(intent);
+                            startActivity(new Intent(MainActivity.this, homeActivity.class));
+                            finish();
+                        }*/
+                        if(!task.isSuccessful()) {
+                            Toast.makeText(MainActivity.this, "Sign in failed." + task.getException(), Toast.LENGTH_SHORT).show();
+                        } else {
+                            startActivity(new Intent(MainActivity.this, homeActivity.class));
                             finish();
                         }
                     }

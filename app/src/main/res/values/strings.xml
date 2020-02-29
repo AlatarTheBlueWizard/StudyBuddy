@@ -26,6 +26,4 @@
     <string name="btn_vTeam">View Team</string>
     <string name="btn_vProfile">View Profile</string>
     <string name="btn_signOut">Sign Out</string>
-    <string name="minimum_password" />
-    <string name="auth_failed" />
 </resources>
